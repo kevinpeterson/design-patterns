@@ -4,13 +4,15 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
 import java.io.IOException;
 import java.util.Stack;
 
 /**
  * Momento Pattern Demo.
+ *
+ * Press the 'Undo' button to undo the last text change.
  */
 public class Memento {
 
@@ -66,20 +68,17 @@ public class Memento {
 
         public EditorCaretaker() {
             super(new GridBagLayout());
+            this.build();
+        }
 
+        public void build() {
             editorOrgininator = new EditorOrgininator(5, 20);
             editorOrgininator.setEditable(true);
-            editorOrgininator.addKeyListener(new KeyListener() {
+            editorOrgininator.addKeyListener(new KeyAdapter() {
                 @Override
                 public void keyTyped(KeyEvent e) {
                     states.push(editorOrgininator.save());
                 }
-
-                @Override
-                public void keyPressed(KeyEvent e) {}
-
-                @Override
-                public void keyReleased(KeyEvent e) {}
             });
 
             JScrollPane scrollPane = new JScrollPane(editorOrgininator);
