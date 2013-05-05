@@ -1,6 +1,6 @@
 design-patterns
 ===============
-Example Design Patterns in Java.
+Example Design Patterns in Java. I find it much easier to understand these patterns after I've seen them in code. Since some of these I haven't used much, here is a spot to practice.
 
 Setup
 -----
@@ -25,7 +25,8 @@ These are the patterns to focus on:
 * Singleton
 * Object Pool
 
-
-
-__Please send Pull Requests!__
+Contribute
+----------
+__Please send Pull Requests!!!!__
+Just make sure there is a ```main``` method or some obvious way to start things up.
 
