@@ -15,7 +15,9 @@ public class Builder {
         System.out.print(weatherStation.getData());
     }
 
-    /** "Director" */
+    /**
+     * The Director.
+     */
     static class WeatherStation {
         private WeatherDataBuilder weatherDataBuilder;
 
@@ -35,7 +37,7 @@ public class Builder {
     }
 
     /**
-     * Product
+     * The Product.
      */
     static class Weather {
 
@@ -71,7 +73,7 @@ public class Builder {
     }
 
     /**
-     * Builder.
+     * The Builder.
      */
     static abstract class WeatherDataBuilder {
 
@@ -96,7 +98,7 @@ public class Builder {
     }
 
     /**
-     * Concrete Builder.
+     * The Concrete Builder.
      *
      * Build the Weather data in XML format.
      */

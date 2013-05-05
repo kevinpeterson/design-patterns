@@ -22,7 +22,7 @@ public class Command {
     }
 
     /**
-     * Invoker.
+     * The Invoker.
      */
     public static class MovementInvoker {
 
@@ -36,7 +36,7 @@ public class Command {
     }
 
     /**
-     * Client.
+     * The Client.
      */
     public static class MovementWindow extends JFrame {
 
@@ -87,7 +87,7 @@ public class Command {
     }
 
     /**
-     * Receiver.
+     * The Receiver.
      */
     public static class Logo extends ImageIcon {
 
