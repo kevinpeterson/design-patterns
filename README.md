@@ -5,7 +5,7 @@ Example Design Patterns in Java. I find it much easier to understand these patte
 Setup
 -----
 Import into Eclipse, Intellij, or whatnot.
-This is a Maven project, but there are no dependencies set.
+This is a Maven project, but there are no dependencies set as of now.
 
 Patterns
 --------
@@ -28,5 +28,6 @@ These are the patterns to focus on:
 Contribute
 ----------
 __Please send Pull Requests!!!!__
-Just make sure there is a ```main``` method or some obvious way to start things up.
+
+Please include a ```main``` method or some obvious way to start things up.
 
